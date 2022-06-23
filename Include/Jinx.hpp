@@ -9897,11 +9897,6 @@ namespace Jinx::Impl
 
 	inline Variant Script::Pop()
 	{
-		if (m_stack.empty())
-		{
-			Error("Stack underflow");
-			return Variant();
-		}
 		auto var = m_stack.back();
 		m_stack.pop_back();
 		return var;
