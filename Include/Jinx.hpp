@@ -12844,10 +12844,6 @@ namespace Jinx
 
 	inline void Variant::Destroy()
 	{
-		// Optimize for common case
-		if (m_type == ValueType::Null)
-			return;
-
 		// Explicitly call destructors for object types
 		switch (m_type)
 		{
@@ -12869,11 +12865,9 @@ namespace Jinx
 			case ValueType::Buffer:
 				m_buffer.~BufferPtr();
 				break;
-			default:
-				break;
+			default: // NULL
+				return;
 		};
-
-		m_type = ValueType::Null;
 	}
 
 	inline bool Variant::GetBoolean() const
