@@ -1,3 +1,30 @@
+### Fork info
+
+19% performance improvement on a simple [Fib 34](https://gist.github.com/Agathon1/232aa489a82bdde865aedc394c675942) program.
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+---
+
+
+
+
+
+
+
+
+
+
+
 # Jinx ![CI](https://github.com/JamesBoer/Jinx/workflows/CI/badge.svg)
 
 
