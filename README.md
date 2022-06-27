@@ -2,7 +2,11 @@
 
 19% performance improvement on a simple [Fib 34](https://gist.github.com/Agathon1/232aa489a82bdde865aedc394c675942) program.
 
-
+Clang args to make faster even:
+`-Ofast -s -flto=thin -Rpass=inline -Xclang -load -Xclang LLVMPolly.so -mllvm -polly`
+  ^            ^                       ^                        ^
+  |            |                       |                        |
+  \------------/-----------------------/------------------------/
 
 
 
